@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="anyRTOS" displayName="anyRTOS" projectFiles="true">
+      <logicalFolder name="src" displayName="src" projectFiles="true">
+        <itemPath>../../anyRTOS/src/anyRTOS.c</itemPath>
+        <itemPath>../../anyRTOS/src/port-def.h</itemPath>
+        <itemPath>../../anyRTOS/src/port.h</itemPath>
+        <itemPath>../../anyRTOS/src/thread-list.h</itemPath>
+      </logicalFolder>
+      <itemPath>../../anyRTOS/anyRTOS.h</itemPath>
+      <itemPath>../../anyRTOS/event.h</itemPath>
+      <itemPath>../../anyRTOS/mutex.h</itemPath>
+      <itemPath>../../anyRTOS/scheduler.h</itemPath>
+      <itemPath>../../anyRTOS/sem.h</itemPath>
+      <itemPath>../../anyRTOS/task.h</itemPath>
+      <itemPath>../../anyRTOS/timer.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="anyRTOS-util"
+                   displayName="anyRTOS-util"
+                   projectFiles="true">
+      <itemPath>../../anyRTOS-util/queue.c</itemPath>
+      <itemPath>../../anyRTOS-util/queue.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="application" displayName="app" projectFiles="true">
+      <logicalFolder name="date-time" displayName="date-time" projectFiles="true">
+        <itemPath>src/date-time/date-time.c</itemPath>
+        <itemPath>src/date-time/date-time.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="intervalometer"
+                     displayName="intervalometer"
+                     projectFiles="true">
+        <itemPath>src/intervalometer/intervalometer.c</itemPath>
+        <itemPath>src/intervalometer/intervalometer.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="prompt" displayName="prompt" projectFiles="true">
+        <itemPath>src/prompt/prompt.c</itemPath>
+        <itemPath>src/prompt/prompt.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="rtcc" displayName="rtcc" projectFiles="true">
+        <itemPath>src/rtcc/rtcc.c</itemPath>
+        <itemPath>src/rtcc/rtcc.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="switch" displayName="switch" projectFiles="true">
+        <itemPath>src/switch/switch.c</itemPath>
+        <itemPath>src/switch/switch.h</itemPath>
+      </logicalFolder>
+      <itemPath>src/anyRTOS-conf.h</itemPath>
+      <itemPath>src/main.c</itemPath>
+      <itemPath>src/msp-exp430g2-conf.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="msp-exp430g2"
+                   displayName="msp-exp430g2"
+                   projectFiles="true">
+      <itemPath>../foundation/msp-exp430g2/adc.c</itemPath>
+      <itemPath>../foundation/msp-exp430g2/adc.h</itemPath>
+      <itemPath>../foundation/msp-exp430g2/board-msp-exp430g2.c</itemPath>
+      <itemPath>../foundation/msp-exp430g2/board-msp-exp430g2.h</itemPath>
+      <itemPath>../foundation/msp-exp430g2/serial-port.c</itemPath>
+      <itemPath>../foundation/msp-exp430g2/serial-port.h</itemPath>
+      <itemPath>../foundation/msp-exp430g2/timers.c</itemPath>
+      <itemPath>../foundation/msp-exp430g2/timers.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>../../anyRTOS</Elem>
+    <Elem>../../anyRTOS-util</Elem>
+    <Elem>./src</Elem>
+    <Elem>../foundation</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>msp430|GNU</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>2</developmentMode>
+          <standard>3</standard>
+          <incDir>
+            <pElem>../../anyRTOS</pElem>
+            <pElem>../../anyRTOS-util</pElem>
+            <pElem>./src</pElem>
+            <pElem>../foundation</pElem>
+          </incDir>
+          <commandLine>-mmcu=msp430g2553 -ffunction-sections</commandLine>
+          <preprocessorList>
+            <Elem>__MSP430G2553__</Elem>
+          </preprocessorList>
+          <warningLevel>2</warningLevel>
+        </cTool>
+        <ccTool>
+          <standard>4</standard>
+          <commandLine>-mmcu=msp430g2553</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/anyRTOS-sample.elf</output>
+          <commandLine>-Wl,--gc-sections</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="../../anyRTOS-util/queue.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../../anyRTOS-util/queue.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../anyRTOS/anyRTOS.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../anyRTOS/event.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../anyRTOS/mutex.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../anyRTOS/scheduler.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../anyRTOS/sem.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../anyRTOS/src/anyRTOS.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../../anyRTOS/src/port-def.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../anyRTOS/src/port.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../anyRTOS/src/thread-list.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../anyRTOS/task.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../anyRTOS/timer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../foundation/msp-exp430g2/adc.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../foundation/msp-exp430g2/adc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../foundation/msp-exp430g2/board-msp-exp430g2.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../foundation/msp-exp430g2/board-msp-exp430g2.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../foundation/msp-exp430g2/serial-port.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../foundation/msp-exp430g2/serial-port.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../foundation/msp-exp430g2/timers.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../foundation/msp-exp430g2/timers.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/anyRTOS-conf.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/date-time/date-time.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/date-time/date-time.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/intervalometer/intervalometer.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="src/intervalometer/intervalometer.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/msp-exp430g2-conf.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/prompt/prompt.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/prompt/prompt.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/rtcc/rtcc.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/rtcc/rtcc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/switch/switch.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/switch/switch.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>msp430|GNU</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>6</developmentMode>
+          <standard>3</standard>
+          <incDir>
+            <pElem>../../anyRTOS</pElem>
+            <pElem>../../anyRTOS-util</pElem>
+            <pElem>./src</pElem>
+            <pElem>../foundation</pElem>
+          </incDir>
+          <commandLine>-mmcu=msp430g2553 -ffunction-sections</commandLine>
+          <preprocessorList>
+            <Elem>__MSP430G2553__</Elem>
+          </preprocessorList>
+          <warningLevel>2</warningLevel>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <standard>4</standard>
+          <commandLine>-mmcu=msp430g2553</commandLine>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/anyRTOS-sample.elf</output>
+          <commandLine>-Wl,--gc-sections</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="../../anyRTOS-util/queue.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../../anyRTOS-util/queue.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../anyRTOS/anyRTOS.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../anyRTOS/event.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../anyRTOS/mutex.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../anyRTOS/scheduler.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../anyRTOS/sem.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../anyRTOS/src/anyRTOS.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../../anyRTOS/src/port-def.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../anyRTOS/src/port.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../anyRTOS/src/thread-list.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../anyRTOS/task.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../anyRTOS/timer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../foundation/msp-exp430g2/adc.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../foundation/msp-exp430g2/adc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../foundation/msp-exp430g2/board-msp-exp430g2.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../foundation/msp-exp430g2/board-msp-exp430g2.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../foundation/msp-exp430g2/serial-port.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../foundation/msp-exp430g2/serial-port.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../foundation/msp-exp430g2/timers.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../foundation/msp-exp430g2/timers.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/anyRTOS-conf.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/date-time/date-time.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/date-time/date-time.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/intervalometer/intervalometer.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="src/intervalometer/intervalometer.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/msp-exp430g2-conf.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/prompt/prompt.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/prompt/prompt.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/rtcc/rtcc.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/rtcc/rtcc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/switch/switch.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/switch/switch.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Simulation" type="1">
+      <toolsSet>
+        <compilerSet>msp430|GNU</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>2</developmentMode>
+          <standard>3</standard>
+          <incDir>
+            <pElem>../../anyRTOS</pElem>
+            <pElem>../../anyRTOS-util</pElem>
+            <pElem>./src</pElem>
+            <pElem>../foundation</pElem>
+          </incDir>
+          <commandLine>-mmcu=msp430g2553 -ffunction-sections</commandLine>
+          <preprocessorList>
+            <Elem>__MSP430G2553__</Elem>
+          </preprocessorList>
+          <warningLevel>2</warningLevel>
+        </cTool>
+        <ccTool>
+          <standard>4</standard>
+          <commandLine>-mmcu=msp430g2553</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/anyRTOS-sample.elf</output>
+          <commandLine>-Wl,--gc-sections</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="../../anyRTOS-util/queue.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../../anyRTOS-util/queue.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../anyRTOS/anyRTOS.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../anyRTOS/event.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../anyRTOS/mutex.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../anyRTOS/scheduler.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../anyRTOS/sem.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../anyRTOS/src/anyRTOS.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../../anyRTOS/src/port-def.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../anyRTOS/src/port.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../anyRTOS/src/thread-list.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../anyRTOS/task.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../anyRTOS/timer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../foundation/msp-exp430g2/adc.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../foundation/msp-exp430g2/adc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../foundation/msp-exp430g2/board-msp-exp430g2.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../foundation/msp-exp430g2/board-msp-exp430g2.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../foundation/msp-exp430g2/serial-port.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../foundation/msp-exp430g2/serial-port.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../foundation/msp-exp430g2/timers.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../foundation/msp-exp430g2/timers.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/anyRTOS-conf.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/date-time/date-time.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/date-time/date-time.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/intervalometer/intervalometer.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="src/intervalometer/intervalometer.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/msp-exp430g2-conf.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/prompt/prompt.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/prompt/prompt.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/rtcc/rtcc.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/rtcc/rtcc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/switch/switch.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/switch/switch.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
